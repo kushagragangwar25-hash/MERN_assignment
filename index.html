@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech club </title>
-    <link rel="stylesheet" href="style.css">
-
- </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
 <body>
-    <header>
-        <h1> Tech Club </h1>
-        <p> Learn.Code.Grow </p>
+
+  <div class="dashboard-container">
+    
+    <!-- Top Header -->
+    <header class="header">
+      <h1>My Dashboard</h1>
     </header>
-    <section>
-        <h2>Upcoming Events </h2>
-        <table>
-            <thead>
-                <tr>
-            <th> Event </th>
-            <th>Date </th>
-            <th> Venue </th>
-                </tr>
-                </thead>
-                <tbody>
-                    <td>HTMl Workshop </td>
-                    <td>  12 Nov </td>
-                    <td> Lab 1</td>
-                </tr>
 
-                <tr>
-                    <td>Hackathon</td>
-                    <td> 20 Nov </td>
-                    <td>Seminar Hall </td>
-                </tr>
-                </tbody>
+    <!-- Sidebar / Menu -->
+    <aside class="sidebar">
+      <h3>Menu</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </aside>
 
-        </table>
-        <section
-            class="register"></section>
-          <h2> Register </h2>
-          <form>
-            <label> Name </label>
-            <input type="text" placeholder="your name" required> 
-            <br> <br>
-            <label> Email:</label>
-            <input type ="Email"
-            placeholder="you@example.com"required>
-            <br> <br>
-            <button type="submit">register</button>
-            </form>
-            
-            </section>
+    <!-- Main Content Area with Stat Cards -->
+    <main class="main-content">
+      
+      <div class="card">
+        <i class="fa-solid fa-user card-icon blue-icon"></i>
+        <div class="card-info">
+          <h2>120</h2>
+          <p>Users</p>
+
+
         </div>
-          
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-sack-dollar card-icon orange-icon"></i>
+        <div class="card-info">
+          <h2>Rs 45k</h2>
+          <p>Sales</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-box card-icon brown-icon"></i>
+
+        
 
 
 
-    
-    
-</body>
 
-</html>
+        <div class="card-info">
+          <h2>36</h2>
+          <p>Orders</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-star card-icon yellow-icon"></i>
+        <div class="card-info">
+          <h2>4.8</h2>
+          <p>Rating</p>
